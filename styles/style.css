@@ -1,0 +1,75 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+* {
+    /* border: 2px solid black; */
+
+}
+
+/* Mobile First */
+
+.recipe {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 400px;
+    padding: 15px;
+}
+
+.image_omelette {
+    width: 90vw;
+    height: 20vh;
+    align-self: flex-end;
+    border-radius: 10px;
+    max-width: 400px;
+
+}
+
+.title__recipe {
+    font-family: 'Young Serif', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.introduction {
+    font-family: 'Outfit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.preparation__recipe {
+    color: hsl(332, 51%, 32%)
+}
+
+.subtitle {
+    color: hsl(14, 45%, 36%);
+}
+
+.table__nutrition {
+    align-self: center;
+    width: 90%;
+}
+
+.table__nutrition td {
+    padding: 0.5rem 0rem 0.5rem 3rem;
+    border-bottom: 1px solid black;
+}
+
+table td:nth-child(even){
+    color: hsl(332, 51%, 32%);
+}
+/* Media Querys */
+
+@media (min-width: 450px) {
+    body {
+        background-color: #F3E5D8;
+        margin: 3rem;
+    }
+
+}
