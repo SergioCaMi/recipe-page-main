@@ -4,12 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
 
-* {
-    /* border: 2px solid black; */
+/* Mobile Design */
 
-}
-
-/* Mobile First */
+/* Section Recipe */
 
 .recipe {
     border-radius: 10px;
@@ -22,25 +19,75 @@
     padding: 40px;
 }
 
+/* Section Presentation Recipe */
+
 .image_omelette {
     width: 90vw;
     height: 20vh;
     align-self: flex-end;
     border-radius: 10px;
     max-width: 400px;
-
 }
 
-.title__recipe,
-.subtitle,
-.subtitle__preparation {
+.title__recipe {
     font-family: 'Young Serif', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 }
 
+.introduction {
+    font-family: 'Outfit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
 
-.introduction,
-.instructions ol,
+/* Section Preparation Recipe */
+
+.preparation__recipe {
+    padding-left: 2rem;
+    line-height: 2rem;
+    background-color: #FFF7FC;
+}
+
+.subtitle__preparation {
+    font-family: 'Young Serif', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: hsl(332, 51%, 32%);
+}
+
+/* Section Ingredients Recipe */
+
+.ingredients__recipe {
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+
+.subtitle {
+    font-family: 'Young Serif', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+/* Section Instructions */
+
+.instructions ol {
+    font-family: 'Outfit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+ol li {
+    padding-left: 1rem;
+}
+
+/* Section Nutrition */
+
 .nutrition p {
     font-family: 'Outfit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
@@ -48,41 +95,9 @@
     color: hsl(24, 5%, 18%);
 }
 
-
-.subtitle__preparation {
-    color: hsl(332, 51%, 32%);
-}
-
-.preparation__recipe,
-.ingredients__recipe {
-    padding-left: 2rem;
-    line-height: 2rem;
-
-}
-
-.preparation__recipe {
-    background-color: #FFF7FC;
-}
-
-.subtitle {
-    color: hsl(14, 45%, 36%);
-}
-
 .table__nutrition {
     align-self: center;
     width: 90%;
-}
-
-.instructions ol li::marker {
-    color: hsl(14, 45%, 36%);
-    font-weight: bold;
-
-}
-
-
-/* Espacio entre los elementos numerados de la lista y el contenido */
-ol li {
-    padding-left: 1rem;
 }
 
 .table__nutrition td {
@@ -94,12 +109,11 @@ table td:nth-child(even) {
     color: hsl(332, 51%, 32%);
 }
 
-/* Media Querys */
+/* Media Queries */
 
 @media (min-width: 450px) {
     body {
         background-color: #F3E5D8;
         margin: 3rem;
     }
-
 }
